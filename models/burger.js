@@ -10,13 +10,13 @@ var burger={
     },
     /* get order and make a new burger --> insert sql */
     cooking:function(burger_name,cb){
-        orm.insertOne("burgers","burger_name",burger_name,function(res){
+        orm.insertOne("burgers",{burger_name:burger_name, devoured:false}, function(res){
             cb(res);
         });
     },
     /* eat burger (devoured status is changed) --> update sql */
     eating:function(id,cb){
-        orm.updateOne("burgers",{devoured : true},"id",id,function(res){
+        orm.updateOne("burgers",{devoured:true},{id:id},function(res){
             cb(res);
         })
     }
