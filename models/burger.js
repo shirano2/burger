@@ -9,14 +9,14 @@ var burger={
         });
     },
     /* get order and make a new burger --> insert sql */
-    cooking:function(burger_name,cb){
-        orm.insertOne("burgers",{burger_name:burger_name, devoured:false}, function(res){
+    cooking:function(obj,cb){
+        orm.insertOne("burgers",obj, function(res){
             cb(res);
         });
     },
     /* eat burger (devoured status is changed) --> update sql */
-    eating:function(id,cb){
-        orm.updateOne("burgers",{devoured:true},{id:id},function(res){
+    eating:function(obj,id,cb){
+        orm.updateOne("burgers",obj,id,function(res){
             cb(res);
         })
     }
