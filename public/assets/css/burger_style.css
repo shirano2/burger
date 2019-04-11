@@ -1,0 +1,9 @@
+#toEat {
+    float:left;
+}
+#alreadyEaten {
+    float:left;
+}
+form {
+    clear:both;
+}
