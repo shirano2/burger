@@ -19,8 +19,8 @@ https://burger-52408.herokuapp.com/
 * CSS3
 * jQuery
 * Javascript
-* Node.JS
 * MySQL
+* Node.js
 * express, express-handlebars
 
 
