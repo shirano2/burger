@@ -20,8 +20,7 @@ https://burger-52408.herokuapp.com/
 * JQuery
 * Javascript
 * MySQL
-* Node.js
-* express, express-handlebars
+* Node.js (Express, Express-handlebars)
 
 
 ### DB Model
